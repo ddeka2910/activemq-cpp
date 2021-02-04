@@ -8,6 +8,7 @@ arch:
 language: c++
       
 script:
+  - cd activemq-cpp
   - ./autogen.sh
   - ./configure
   - make
