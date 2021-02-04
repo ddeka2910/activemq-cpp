@@ -6,6 +6,14 @@ arch:
   - ppc64le    
 
 language: c++
+
+addons:
+  apt:
+    packages:
+      - uuid-dev
+      - libcppunit-dev
+      - APR
+      - APR-Util
       
 script:
   - cd activemq-cpp
