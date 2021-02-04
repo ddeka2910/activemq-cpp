@@ -13,7 +13,8 @@ addons:
       - uuid-dev
       - libcppunit-dev
       - libapr1
-      - libapr1-dev      
+      - libapr1-dev 
+      - libaprutil1-dev
 script:
   - cd activemq-cpp
   - ./autogen.sh
