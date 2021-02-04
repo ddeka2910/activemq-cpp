@@ -6,18 +6,6 @@ arch:
   - ppc64le    
 
 language: c++
-
-addons:
-  apt:
-    packages:
-      - autoconf
-      - automake
-      - libtool
-      - APR
-      - APR-Util
-      - CPPUnit
-      - libuuid
-      - openssl
       
 script:
   - ./autogen.sh
