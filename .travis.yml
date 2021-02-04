@@ -1,0 +1,30 @@
+dist: xenial
+sudo: true
+
+arch:
+  - amd64
+  - ppc64le    
+
+language: c++
+
+addons:
+  apt:
+    packages:
+      - autoconf
+      - automake
+      - libtool
+      - APR
+      - APR-Util
+      - CPPUnit
+      - libuuid
+      - openssl
+      
+script:
+  - ./autogen.sh
+  - ./configure
+  - make
+  - make install
+  - make doxygen-run
+  - make check
+  - cd src/test-integration
+  - ./activemq-test-integration
